@@ -1,0 +1,12 @@
+{
+  "type": "List",
+  "title": "Durée estimée de résolution",
+  "request": {
+    "url": "/odata/v4/Tickets?$select=ID_TICKET,PredictedDuration&$filter=ID_TICKET eq ${params.id}"
+  },
+  "item": {
+    "title": "{ID_TICKET}",
+    "description": "{= ${PredictedDuration} + ' h ± 1 h'}",
+    "icon": { "src": "sap-icon://time-entry-request" }
+  }
+}
