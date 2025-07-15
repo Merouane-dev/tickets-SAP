@@ -18,10 +18,7 @@ Objectif : démontrer la faisabilité d’une **estimation automatique de la dur
 ├── requirements.txt # Dépendances Python
 └── README.md # Ce fichier
 
-bash
-Copier
-Modifier
-
+ 
 ## 🚀 Installation rapide
 
  
@@ -38,28 +35,19 @@ pip install -r requirements.txt
 🏃 Exécution des scripts
 Préparer le dataset
 
-bash
-Copier
-Modifier
+ 
 python scripts/00_prepare_dataset.py
 Exploration & figures
 
-bash
-Copier
-Modifier
+ 
 python scripts/10_eda.py
 Entraîner le modèle linéaire
-
-bash
-Copier
-Modifier
+ 
 python scripts/01_train_lr.py
 Les artefacts sont enregistrés dans models/ et figures/.
 
 🌐 Prototype d’API Flask
-bash
-Copier
-Modifier
+
 cd api
 python app.py
 Le service expose un endpoint /predict qui renvoie la durée estimée à partir des champs du ticket passés en JSON.
